@@ -2,6 +2,7 @@
 @session_start();
 $uid = $_SESSION["uid"];
 $con = mysqli_connect('127.0.0.1','root','');
+mysqli_query($con,"SET NAMES UTF8");
 $game = $_GET['game'];
 $price = $_GET['price'];
 if(!$con)

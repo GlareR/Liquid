@@ -11,6 +11,7 @@ if(isset($_POST["username"])){
 		exit;
 	}
 	$link=mysqli_connect("localhost","root");
+	mysqli_query($link,"SET NAMES UTF8");
 	$sql="insert into user (username,pwd,money) values ('$username','$pwd','0')";
 	mysqli_select_db($link,'liquid');
 	$result=mysqli_query($link,"select username from user where username='$username'");

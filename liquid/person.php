@@ -67,6 +67,7 @@
 @session_start();
 $uid = $_SESSION["uid"];
 $con = mysqli_connect('127.0.0.1','root','');
+mysqli_query($con,"SET NAMES UTF8");
 if(!$con)
   echo "数据库连接失败！";
 else{
@@ -78,8 +79,10 @@ else{
   $result2 = mysqli_query($con,$sql2);
   
   $row2=mysqli_fetch_array($result2);
+  $row=mysqli_fetch_array($result);
+  $len=mysqli_num_rows($result);
   mysqli_close($con);
-  if($result)
+  if($len)
   {
   	echo "<h3>当前您拥有的游戏：</h3>";
     echo "<table class='alt'>";     //使用表格格式化数据
@@ -111,6 +114,11 @@ else{
   else
   {
   	echo "<h3>您目前没有购买游戏</h3>";
+  	if($result2)
+  	{
+  		echo "<h3>您的账户余额：</h3>";
+  		echo "<h3>". $row2['money']."</h3>";
+  	}
   }
 }
 ?>

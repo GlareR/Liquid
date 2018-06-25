@@ -64,6 +64,7 @@
 @session_start();
 $uid = $_SESSION["uid"];
 $con = mysqli_connect('127.0.0.1','root','');
+mysqli_query($con,"SET NAMES UTF8");
 if(!$con)
   echo "数据库连接失败！";
 else{
