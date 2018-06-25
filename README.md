@@ -1,7 +1,7 @@
 # Liquid
-#A game web
-##大三下学期软件工程作业
-##开发环境：WAMP(PHP+Mysql)<br>
+## A webstore of games<br>
+### 大三下学期软件工程作业<br>
+##### 开发环境：WAMP(PHP+Mysql)<br>
 
 　2018-6-25 基本完成版
     
