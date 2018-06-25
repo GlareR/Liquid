@@ -5,8 +5,8 @@
 
 　2018-6-25 基本完成版
     
-      PHP:GlareBi
-      HTML+CSS:曾
+      后台:毕研翔
+      前端:曾宪晗
       
 四个表：<br>
 　　　　user（username、pwd、money）<br>
