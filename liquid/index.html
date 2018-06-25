@@ -1,0 +1,197 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Home -- Liquid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body class="landing">
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header" class="alt">
+						<h1><a href="index.html">Liquid</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>选项</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Liquid 首页</a></li>
+											<li><a href="aboutus.html">关于 Liquid</a></li>
+                                            <li><a href="gamelist.html">游戏榜单</a></li>
+											<?php
+												@session_start();
+												if($_SESSION)
+												{
+													$uid = $_SESSION["uid"];
+													echo '<li><strong><span class="blackhl">Welcome, </span>' . '<span class="redhl">' . $uid . '</span></strong></li>';
+                                                    echo '<li><a href="person.php">&nbsp;&nbsp;&nbsp;&nbsp;个人中心</a></li>';
+													echo '<li><a href="shopping_list.php">&nbsp;&nbsp;&nbsp;&nbsp;购买游戏</a></li>';
+                                                    echo '<li><a href="gowuche.php">&nbsp;&nbsp;&nbsp;&nbsp;我的购物车</a></li>';
+													echo '<li><a href="logoff.php">&nbsp;&nbsp;&nbsp;&nbsp;退出登录</a></li>';
+												}
+												else
+												{
+													echo '<li><a href="regindex.html">注册账号</a></li>';
+													echo '<li><a href="login.html">登录账号</a></li>';
+												}
+											?>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Banner -->
+					<section id="banner">
+						<div class="inner">
+							<h2>Liquid</h2>
+							<p>欢迎来到 Liquid<br />
+							最佳娱乐平台。<br />
+							享受游戏、创造及<a href="#cta">更多</a>。</p>
+							<ul class="actions">
+								<li><a href="aboutus.html" class="button special">关于我们</a></li>
+							</ul>
+						</div>
+						<a href="#one" class="more scrolly">了解更多</a>
+					</section>
+
+				<!-- One -->
+					<section id="one" class="wrapper style1 special">
+                    	<div class="inner">
+                        	<section>
+                            	<h2>游戏拼图秀</h2>
+								<div class="box alt">
+									<div class="row uniform 50%">
+										<div class="12u">
+                                        	<span class="image fit">
+                                                <div id="imgchangediv">
+                                                    <img src="images/gamebig01.png" style="display: block;"/>
+                                                    <img src="images/gamebig02.png" style="display: none;"/>
+                                                    <img src="images/gamebig03.png" style="display: none;"/>
+                                                    <img src="images/gamebig04.png" style="display: none;"/>
+                                                    <div id="imgyuan">
+                                                        <font></font>
+                                                        <font></font>
+                                                        <font></font>
+                                                        <font></font>
+                                                    </div>
+                                                </div>
+        									</span>
+                                        </div>-->
+										<div class="4u"><span class="image fit"><img src="images/game03.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/game04.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/game05.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/game06.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/game07.jpg" alt="" /></span></div>
+										<div class="4u"><span class="image fit"><img src="images/game08.jpg" alt="" /></span></div>
+									</div>
+								</div>
+							</section>
+                    	</div>
+                    </section>
+                    
+
+				<!-- Two -->
+					<section id="two" class="wrapper alt style2">
+						<section class="spotlight">
+							<div class="image"><img src="images/game00.jpg" alt="" /></div><div class="content">
+								<h2>贪玩蓝月</h2>
+								<p>大扎好，我系轱天乐，我四渣渣辉，探挽懒月，介四里没有挽过的船新版本，挤需体验三番钟，里造会干我一样，爱象节款游戏</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/game01.jpg" alt="" /></div><div class="content">
+								<h2>侠盗猎车手 5</h2>
+								<p>《侠盗猎车手5》不仅仅是一部会让你无法自拔的游戏，而且还用聪明犀利的手法讽刺了当代美国社会。在每个角度来讲都是5年前推出的《侠盗猎车手4》的全面改良，从技术上讲《侠盗猎车手5》用一种十分便捷的方式让游戏更加完善，同时它还不拘泥于系列的原作，而是充满野心的用自己的方式来向前迈进。游戏世界中再没有其他哪个世界能够达到《侠盗猎车手5》这样的大小和规模，而且游戏背后的幽默和混乱都展示出了制作组犀利的智慧。它讲述了一个扣人心弦充满挑衅而且出人意料的故事，而最关键的是让所有这一切都发生在玩家自我的掌控之下，在洛圣都中，你可以完全按照自己的想法来展开你的冒险之旅。</p>
+							</div>
+						</section>
+						<section class="spotlight">
+							<div class="image"><img src="images/game02.png" alt="" /></div><div class="content">
+								<h2>绝地求生</h2>
+								<p>绝地求生(PLAYERUNKNOWN’S BATTLEGROUNDS)是战术竞技类型的游戏，每一局游戏将有100名玩家参与，他们将被投放在绝地岛(battlegrounds)的上空，游戏开始跳伞时所有人都一无所有。<br />
+								尽管每局游戏的开局都一样，但是该作设计独到，每一回合都让你感觉像是全新的冒险，让人在反复“再来一局”的过程中不知不觉就花上好几个小时。在保留硬核生存要素的前提下，沿用了与《DayZ》相似的简朴游戏模式，它节奏紧凑，亟需玩家集中精神，也是一款自然无矫饰的多人竞技游戏，成功地推广了大逃杀式的死亡竞赛模式。鉴于游戏还处于抢先体验阶段，故优化上还存在一些瑕疵。</p>
+							</div>
+						</section>
+					</section>
+
+				<!-- Three -->
+					<section id="three" class="wrapper style3 special">
+						<div class="inner">
+							<header class="major">
+								<h2>了解最新游戏排名</h2>
+								<p>眼花缭乱？暂时没有想法？<br />从排行榜来寻找适合你的游戏！</p>
+							</header>
+							<ul class="features">
+								<li class="icon fa-flag-o">
+									<h3><a href="gamelist.html#list01">热门游戏排行榜</a></h3>
+									<p>本周最受全世界玩家欢迎、最热门的十款电脑游戏。来不及解释了，赶紧上车！</p>
+								</li>
+								<li class="icon fa-heart-o">
+									<h3><a href="gamelist.html#list02">最新游戏期待榜</a></h3>
+									<p>本周全世界玩家最期待能玩上的十款新游戏，快来看看这里面有没有您期待的那款？</p>
+								</li>
+								<li class="icon fa-paper-plane-o">
+									<h3><a href="gamelist.html#list03">热门手游排行榜</a></h3>
+									<p>您也许不喜欢在您的PC，Mac，XBox或者PS4上玩游戏。不过没关系。这里还有本周最受全世界玩家欢迎、最热门手机的十款游戏。赶紧准备好您的手机吧！</p>
+								</li>
+								<li class="icon fa-laptop">
+									<h3><a href="gamelist.html#list04">最新单机游戏榜</a></h3>
+									<p>最近的最新出的八款单机游戏，小伙伴们都玩上了，您还等什么，快来看看吧！</p>
+								</li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- CTA -->
+					<section id="cta" class="wrapper style4">
+						<div class="inner">
+							<header>
+								<h2>那么，您还在犹豫什么呢？</h2>
+								<p>现在就加入 Liquid 来体验更多特色功能吧。</p>
+							</header>
+							<ul class="actions vertical">
+								<li><a href="aboutus.html" class="button fit special">关于我们</a></li>
+								<li><a href="Mailto:airforce_wade@foxmail.com" class="button fit">联系我们</a></li>
+							</ul>
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2018 Liquid</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+            <script src="assets/js/prototype.js"></script>
+            <script src="assets/js/picmov.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

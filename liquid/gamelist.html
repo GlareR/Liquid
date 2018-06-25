@@ -1,0 +1,413 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Game List -- Liquid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Liquid</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>选项</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Liquid 首页</a></li>
+											<li><a href="aboutus.html">关于 Liquid</a></li>
+                                            <li><a href="gamelist.html">游戏榜单</a></li>
+											<?php
+												@session_start();
+												if($_SESSION)
+												{
+													$uid = $_SESSION["uid"];
+													echo '<li><strong><span class="blackhl">Welcome, </span>' . '<span class="redhl">' . $uid . '</span></strong></li>';
+                                                    echo '<li><a href="person.php">&nbsp;&nbsp;&nbsp;&nbsp;个人中心</a></li>';
+													echo '<li><a href="shopping_list.php">&nbsp;&nbsp;&nbsp;&nbsp;购买游戏</a></li>';
+                                                    echo '<li><a href="gowuche.php">&nbsp;&nbsp;&nbsp;&nbsp;我的购物车</a></li>';
+													echo '<li><a href="logoff.php">&nbsp;&nbsp;&nbsp;&nbsp;退出登录</a></li>';
+												}
+												else
+												{
+													echo '<li><a href="regindex.html">注册账号</a></li>';
+													echo '<li><a href="login.html">登录账号</a></li>';
+												}
+											?>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>游戏排行榜</h2>
+							<p>各种游戏排行榜<br />从这里寻找您心仪的游戏</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+                            
+								<section>
+									<h3 id="list01">本周热门游戏排行榜</h3>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>排名</th>
+													<th>游戏名称</th>
+                                                    <th>类型</th>
+                                                    <th>热度</th>
+                                                    <th>评价</th>
+                                                    <th>价格</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>侏罗纪世界进化</td>
+                                                    <td>SIM</td>
+                                                    <td>23629</td>
+                                                    <td>8.4</td>
+													<td>￥99.99</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>堡垒之夜</td>
+                                                    <td>TPS</td>
+                                                    <td>11844</td>
+                                                    <td>8.9</td>
+													<td>￥198.99</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>GTA5</td>
+                                                    <td>ACT</td>
+                                                    <td>11536</td>
+                                                    <td>9.5</td>
+													<td>￥198.00</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>孤岛惊魂5</td>
+                                                    <td>FPS</td>
+                                                    <td>9655</td>
+                                                    <td>8.5</td>
+													<td>￥248.00</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>腐烂国度</td>
+                                                    <td>TPS</td>
+                                                    <td>9491</td>
+                                                    <td>6.9</td>
+													<td>￥99.99</td>
+												</tr>
+                                                <tr>
+													<td>6</td>
+													<td>底特律变人</td>
+                                                    <td>AVG</td>
+                                                    <td>9441</td>
+                                                    <td>9.4</td>
+													<td>￥99.99</td>
+												</tr>
+                                                <tr>
+													<td>7</td>
+													<td>上古卷轴5</td>
+                                                    <td>RPG</td>
+                                                    <td>8562</td>
+                                                    <td>9.4</td>
+													<td>￥99.99</td>
+												</tr>
+                                                <tr>
+													<td>8</td>
+													<td>真三国无双8</td>
+                                                    <td>ACT</td>
+                                                    <td>6470</td>
+                                                    <td>5.8</td>
+													<td>￥99.99</td>
+												</tr>
+                                                <tr>
+													<td>9</td>
+													<td>巫师3</td>
+                                                    <td>ARPG</td>
+                                                    <td>6130</td>
+                                                    <td>9.7</td>
+													<td>￥99.99</td>
+												</tr>
+                                                <tr>
+													<td>10</td>
+													<td>吸血鬼</td>
+                                                    <td>ARPG</td>
+                                                    <td>5930</td>
+                                                    <td>8.0</td>
+													<td>￥99.99</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                                    
+                                    <h3 id="list02">本周新游期待榜</h3>
+									<div class="table-wrapper">
+										<table>
+											<thead>
+												<tr>
+													<th>排名</th>
+													<th>游戏名称</th>
+                                                    <th>上市时间</th>
+                                                    <th>类型</th>
+                                                    <th>热度</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>1</td>
+													<td>GTA6</td>
+                                                    <td>未知</td>
+                                                    <td>SIM</td>
+                                                    <td>7113</td>
+												</tr>
+												<tr>
+													<td>2</td>
+													<td>骑马与砍杀</td>
+                                                    <td>未知</td>
+                                                    <td>ARPG</td>
+                                                    <td>3889</td>
+												</tr>
+												<tr>
+													<td>3</td>
+													<td>赛博朋克2077</td>
+                                                    <td>未知</td>
+                                                    <td>RPG</td>
+                                                    <td>2313</td>
+												</tr>
+												<tr>
+													<td>4</td>
+													<td>古墓丽影暗影</td>
+                                                    <td>2018-09-14</td>
+                                                    <td>ACT</td>
+                                                    <td>2207</td>
+												</tr>
+												<tr>
+													<td>5</td>
+													<td>三国全面战争</td>
+                                                    <td>未知</td>
+                                                    <td>SLG</td>
+                                                    <td>2086</td>
+												</tr>
+                                                <tr>
+													<td>6</td>
+													<td>鬼泣5</td>
+                                                    <td>未知</td>
+                                                    <td>ACT</td>
+                                                    <td>1682</td>
+												</tr>
+                                                <tr>
+													<td>7</td>
+													<td>上古卷轴6</td>
+                                                    <td>未知</td>
+                                                    <td>RPG</td>
+                                                    <td>1557</td>
+												</tr>
+                                                <tr>
+													<td>8</td>
+													<td>荒野大镖客2</td>
+                                                    <td>2018-10-26</td>
+                                                    <td>TPS</td>
+                                                    <td>1451</td>
+												</tr>
+                                                <tr>
+													<td>9</td>
+													<td>暗黑血统3</td>
+                                                    <td>未知</td>
+                                                    <td>ACT</td>
+                                                    <td>1258</td>
+												</tr>
+                                                <tr>
+													<td>10</td>
+													<td>圣歌</td>
+                                                    <td>2019-02-22</td>
+                                                    <td>RPG</td>
+                                                    <td>1151</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+                                    
+                                    <h3 id="list03">本周手游排行榜</h3>
+									<div class="row">
+										<div class="6u$ 12u$(medium)">
+											<ol>
+												<li>方舟：生存进化</li>
+												<li>七龙珠：激战传说</li>
+												<li>王之袭击</li>
+												<li>皇帝圣印战记：战乱四重奏</li>
+												<li>天下第一剑客传</li>
+												<li>地下城编年史</li>
+                                                <li>魔之谷</li>
+                                                <li>我的恐龙</li>
+                                                <li>王者集结</li>
+                                                <li>曙光破晓：起源</li>
+											</ol>
+                                    	</div>
+									</div>
+
+									<h3 id="list04">最新单机游戏</h3>
+									<div class="table-wrapper">
+										<table class="alt">
+											<thead>
+												<tr>
+													<th>游戏名称</th>
+													<th>类型</th>
+													<th>评价</th>
+												</tr>
+											</thead>
+											<tbody>
+												<tr>
+													<td>吸血鬼</td>
+													<td>RPG</td>
+													<td>8.0</td>
+												</tr>
+												<tr>
+													<td>黑暗之魂：重制版</td>
+													<td>ARPG</td>
+													<td>9.2</td>
+												</tr>
+												<tr>
+													<td>永恒之柱2</td>
+													<td>RPG</td>
+													<td>8.8</td>
+												</tr>
+												<tr>
+													<td>流放者柯南</td>
+													<td>ARPG</td>
+													<td>6.9</td>
+												</tr>
+												<tr>
+													<td>全战不列颠</td>
+													<td>SLG</td>
+													<td>7.4</td>
+												</tr>
+                                                <tr>
+													<td>幻想三国志5</td>
+													<td>RPG</td>
+													<td>5.5</td>
+												</tr>
+                                                <tr>
+													<td>冰汽时代</td>
+													<td>SLG</td>
+													<td>9.1</td>
+												</tr>
+                                                <tr>
+													<td>莉蒂与苏尔的工作室</td>
+													<td>RPG</td>
+													<td>8.5</td>
+												</tr>
+											</tbody>
+										</table>
+									</div>
+								</section>
+
+								<section>
+									<h3>精选评论</h3>
+									<p><span class="image left"><img src="images/userpic01.jpg" alt="" /></span><strong>SpongBob</strong> 对游戏 <strong>绝地求生</strong> 的评价：<br /><h5>在这款游戏中并不是所有玩家在降落后都能轻而易举地找到得体的武器装备。敌对的玩家之间，甚至是同一个小队的伙伴之间都有可能在游戏初期寻找资源时发生冲突——而这其实是这款游戏核心机制中很重要的一环。绝大多数不合格的生存者都将很快在这个阶段被淘汰。这款游戏中玩家之间互相伤害的行为不但不会令人沮丧，反而还是这款游戏乐趣很重要的一大来源。总而言之，《绝地求生：大逃杀》是大逃杀类游戏阵营中新增的一员悍将。它的玩法机制已经高度成熟，玩家之间相爱相杀的乐趣也令人陶醉。</h5></p>
+									<p><span class="image right"><img src="images/userpic02.jpg" alt="" /></span><strong>BadGirl</strong> 对游戏 <strong>贪玩蓝月</strong> 的评价：<br /><h5>看到评论里清一色的段子手，说反话，用戏谑的语气来嘲讽这款游戏，我陷入了沉思……这款游戏真的不好玩吗？我想问在座的各位，你们有谁体验了三分钟？有吗？没有体验三分钟，你们有什么资格评论这款游戏？用自以为聪明的段子，生生把一款优秀的游戏给扼杀，这些段子也许看起来很好笑，但是笑声背后又有什么呢？没有，什么都没有，有的只是空虚的灵魂，这种风气，真的不可取。我来说说我对这款游戏的看法吧:从画质上，这款游戏堪称行业楷模，用目前顶尖的HTML引擎渲染，一草一木，光影变化，都表现得淋漓尽致，栩栩如生；操作上，人性化的的自动寻路打怪系统，告别诸如英雄联盟，绝地求生等一众游戏无脑而又繁琐的体力操作，真正解放了双手，这才是真正考验脑力和技术的游戏啊；再说剧情，我至今仍然为主人公如怨如慕，如泣如诉，哀婉凄凉的爱情扼腕叹息，我仿佛也进入了游戏世界，跟着主人公一起，承担着命运的考验，与主人公同呼吸共命运，试问，还有哪个游戏能把剧情做的如此深入人心，大概没有吧，不对，是绝对没有！鲁迅先生说过:“哪里有天才，我只是把别人喝咖啡的时间都用在玩贪玩蓝月上”。可见，鲁迅先生对这款游戏也给予了很高的评价。现在，我每天都会进入游戏体验三分钟，玩优秀游戏，体验优秀人生。优秀，已经成为一种习惯。清晨，第一束阳光照进我的窗户，咖啡，还氤氲着淡淡的清香，打开电脑，耳边又传来那熟悉的声音:大渣好，我四渣渣辉，探玩揽月，介系你没有挽过的船新版本，挤需体验三番钟，你就会干我一样，挨上节款游戏，系兄弟就一起来干我吧。</h5></p>
+                                    <p><span class="image left"><img src="images/userpic03.jpg" alt="" /></span><strong>MyLoveETR</strong> 对游戏 <strong>守望先锋</strong> 的评价：<br /><h5>《守望先锋》其实是FPS细分市场下的产物。传统FPS玩家会去玩《COD》、《战地》和《CSGO》这一类传统的FPS游戏；而一些对枪法不是那么有自信的，喜欢各种技能和视觉效果、对游戏节奏偏向休闲的玩家则表示愿意去尝试《守望先锋》这种类型的游戏。<br />隐藏比赛数据的机制这一点对新人来说非常友好，不用担心死的过多被队友责怪。同时对于那些比赛中精彩的表现给予回放，这样的做法即表扬了优秀的玩家，也让新手们减少了负担，相对其他各种数据公开的游戏而言，《守望先锋》的压力更小，也就更吸引人。此外相对于对于传统的射击游戏，所有的一起道具、枪械、技能都是为了让玩家的射击更精确。但《守望先锋》却反其道而行之，射击的精确度不是那么重要，取而代之的是技能的使用与队友之间的配合，这种创新的射击游戏玩法是许多玩家之前没有体验过的。</h5></p>
+								</section>
+                                
+                                <section>
+                                    <h3>我也来评论</h3>
+                                    <form method="post" action="#">
+                                        <div class="row uniform">
+                                            <div class="6u 12u$(xsmall)">
+                                                <input type="text" name="demo-name" id="demo-name" value="" placeholder="昵称" />
+                                            </div>
+                                            <div class="6u$ 12u$(xsmall)">
+                                                <input type="email" name="demo-email" id="demo-email" value="" placeholder="电子邮箱" />
+                                            </div>
+                                            <div class="12u$">
+                                                <div class="select-wrapper">
+                                                    <select name="demo-category" id="demo-category">
+                                                        <option value="0">- 请选择游戏 -</option>
+                                                        <option value="1">贪玩蓝月</option>
+                                                        <option value="2">GTA5</option>
+                                                        <option value="3">守望先锋</option>
+                                                        <option value="4">绝地求生</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                            <div class="4u 12u$(small)">
+                                                <input type="radio" id="demo-priority-low" name="demo-priority" checked>
+                                                <label for="demo-priority-low">差评</label>
+                                            </div>
+                                            <div class="4u 12u$(small)">
+                                                <input type="radio" id="demo-priority-normal" name="demo-priority">
+                                                <label for="demo-priority-normal">中评</label>
+                                            </div>
+                                            <div class="4u$ 12u$(small)">
+                                                <input type="radio" id="demo-priority-high" name="demo-priority">
+                                                <label for="demo-priority-high">好评</label>
+                                            </div>
+                                            <div class="12u$">
+                                                <textarea name="demo-message" id="demo-message" placeholder="输入您的评论" rows="6"></textarea>
+                                            </div>
+                                            <div class="6u 12u$(small)">
+                                                <input type="checkbox" id="demo-copy" name="demo-copy">
+                                                <label for="demo-copy">匿名评价</label>
+                                            </div>
+                                            <div class="6u$ 12u$(small)">
+                                                <input type="checkbox" id="demo-human" name="demo-human" checked>
+                                                <label for="demo-human">公开我的评论</label>
+                                            </div>
+                                            <div class="12u$">
+                                                <ul class="actions">
+                                                    <li><input type="submit" value="提交评论" class="special" /></li>
+                                                    <li><input type="reset" value="重置评论" /></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </section>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2018 Liquid</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

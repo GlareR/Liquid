@@ -1,0 +1,105 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>About Us -- Liquid</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+	</head>
+	<body>
+
+		<!-- Page Wrapper -->
+			<div id="page-wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="index.html">Liquid</a></h1>
+						<nav id="nav">
+							<ul>
+								<li class="special">
+									<a href="#menu" class="menuToggle"><span>选项</span></a>
+									<div id="menu">
+										<ul>
+											<li><a href="index.html">Liquid 首页</a></li>
+											<li><a href="aboutus.html">关于 Liquid</a></li>
+                                            <li><a href="gamelist.html">游戏榜单</a></li>
+											<?php
+												@session_start();
+												if($_SESSION)
+												{
+													$uid = $_SESSION["uid"];
+													echo '<li><strong><span class="blackhl">Welcome, </span>' . '<span class="redhl">' . $uid . '</span></strong></li>';
+                                                    echo '<li><a href="person.php">&nbsp;&nbsp;&nbsp;&nbsp;个人中心</a></li>';
+													echo '<li><a href="shopping_list.php">&nbsp;&nbsp;&nbsp;&nbsp;购买游戏</a></li>';
+                                                    echo '<li><a href="gowuche.php">&nbsp;&nbsp;&nbsp;&nbsp;我的购物车</a></li>';
+													echo '<li><a href="logoff.php">&nbsp;&nbsp;&nbsp;&nbsp;退出登录</a></li>';
+												}
+												else
+												{
+													echo '<li><a href="regindex.html">注册账号</a></li>';
+													echo '<li><a href="login.html">登录账号</a></li>';
+												}
+											?>
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Main -->
+					<article id="main">
+						<header>
+							<h2>关于 Liquid</h2>
+							<p>了解 Liquid 能给您带来的一切！</p>
+						</header>
+						<section class="wrapper style5">
+							<div class="inner">
+
+								<h3>随时游戏</h3>
+								<p>我们有上万款精彩游戏，从动作游戏到独立游戏，种类繁多，应有尽有。您可以尽情享受独家优惠、游戏自动更新及各种出色服务。</p>
+
+								<hr />
+
+								<h3>加入社区</h3>
+								<p>会见新玩家，加入讨论区，发表对游戏的评价和见解，还有更多！与高手零距离接触，一起学习游戏新姿势！</p>
+
+								<hr />
+
+								<h3>随处娱乐</h3>
+								<p>无论您用的是 PC、Mac、Linux box、移动设备、甚至是您的电视，您都可以享受到 Liquid 的服务。快乐与您同在！</p>
+							</div>
+						</section>
+					</article>
+
+				<!-- Footer -->
+					<footer id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+							<li><a href="#" class="icon fa-envelope-o"><span class="label">Email</span></a></li>
+						</ul>
+						<ul class="copyright">
+							<li>&copy; 2018 Liquid</li>
+						</ul>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
