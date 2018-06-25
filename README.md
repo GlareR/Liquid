@@ -2,7 +2,7 @@
 ## A webstore of games<br>
 ### 大三下学期软件工程作业<br>
 ##### 开发环境：WAMP(PHP+Mysql)<br>
-##### Version:  <br>  WAMP 3.0.6 x64<br>  Apache 2.4.23<br>  PHP 5.6.25<br>  MySql 5.7.14<>
+##### Version:  <br>  WAMP 3.0.6 x64<br>  Apache 2.4.23<br>  PHP 5.6.25<br>  MySql 5.7.14<br>
 2018-6-25 基本完成版
     
       后台:毕研翔
