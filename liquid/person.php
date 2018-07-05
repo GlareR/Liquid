@@ -79,7 +79,7 @@ else{
   $result2 = mysqli_query($con,$sql2);
   
   $row2=mysqli_fetch_array($result2);
-  $row=mysqli_fetch_array($result);
+  //$row=mysqli_fetch_array($result);
   $len=mysqli_num_rows($result);
   mysqli_close($con);
   if($len)
