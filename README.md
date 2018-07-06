@@ -3,6 +3,7 @@
 ### 大三下学期软件工程作业<br>
 ##### 开发环境：WAMP(PHP+Mysql)<br>
 ##### Version:  <br>  WAMP 3.0.6 x64<br>  Apache 2.4.23<br>  PHP 5.6.25<br>  MySql 5.7.14<br>
+###### 需要修改的Apache配置文件Httpd.conf已上传至根目录（需覆盖至 X:\\...\wamp\bin\apache\apacheX.X.XX\）
 2018-6-25 基本完成版
     
       后台:毕研翔、吕明逸
